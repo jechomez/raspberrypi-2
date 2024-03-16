@@ -207,6 +207,15 @@ Answer these questions:<br>\
 <br>Question 2: Based on your knowledge of network security should this machine be investigated?  \
 <br>Keep your response short.'
                 messagedetails = "Inbound packets - Host: " + identarr[0]
+          
+          message = message  + ' <br> ' + mm + '<br>\
+Answer these questions:<br>\
+<br>Question 3: Which machines are HOSTS AT RISK? \
+<br>Question 4: Which HOSTS AT RISK cannot be pinged?  \
+<br>Keep your response short.'
+          messagedetails = "new questions ended." 
+
+        
         if message != "" and inside == 1 :
           privategptmessage.append([message,messagedetails])
 
