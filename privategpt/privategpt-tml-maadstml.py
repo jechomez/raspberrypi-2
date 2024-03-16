@@ -147,7 +147,9 @@ inbound network traffic data size should not exceed ' + thresholdinbound + ' byt
              message = message + "<br>Question: Does any value or size in the inbound network traffic data size, from host machine " + identarr[0] + ", exceed " + thresholdinbound + \
 " bytes or show unusual patterns?  Should this machine be investigated? Keep your answer short and to the point."
 
-        privategptmessage.append(message)
+        message = 'List out all host machine with either the Inbound Network Traffic or Outbound Network Traffic exceed ' + thresholdoutbound
+
+           privategptmessage.append(message)
                  
 
    #print("message=",privategptmessage)
