@@ -188,8 +188,8 @@ def gatherdataforprivategpt(result):
                meanout = rr
                message = message  + ' <br> ' + mm + '<br>\
 Answer these questions:<br>\
-<br>Question 1: Are there any drastic changes in the values of these data? \
-<br>Question 2: Based on your knowledge of network security should this machine be investigated?   \
+<br>Question 1a: Are there any drastic changes in the values of these data? \
+<br>Question 2a: Based on your knowledge of network security should this machine be investigated?   \
 <br>Keep your response short.'
                messagedetails = "Outbound packets - Host: " + identarr[0]
         if 'inboundpackets' in r['Identifier']:
@@ -203,8 +203,8 @@ Answer these questions:<br>\
                 meanin = rr
                 message = message  + ' <br> ' + mm + '<br>\
 Answer these questions:<br>\
-<br>Question 1: Are there any drastic changes in the values of these data? \
-<br>Question 2: Based on your knowledge of network security should this machine be investigated?  \
+<br>Question 1b: Are there any drastic changes in the values of these data? \
+<br>Question 2b: Based on your knowledge of network security should this machine be investigated?  \
 <br>Keep your response short.'
                 messagedetails = "Inbound packets - Host: " + identarr[0]
           
